@@ -1,0 +1,41 @@
+{
+    "templates": [
+        {
+            "categories": [
+                "operating-system"
+            ],
+            "command": "/bin/bash",
+            "description": "Debian-based Linux operating system",
+            "image": "ubuntu:latest",
+            "interactive": true,
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ubuntu.png",
+            "maintainer": "https://github.com/docker-library",
+            "note": "Docker Friends Ubuntu Template",
+            "platform": "linux",
+            "title": "Ubuntu",
+            "type": "Standalone"
+        },
+        {
+            "categories": [
+                "docker"
+            ],
+            "description": "Docker image registry",
+            "image": "registry:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/docker.png",
+            "maintainer": "https://git.launchpad.net/cloud-images/+oci/ubuntu-base/",
+            "note": "Docker Friends Ubuntu Template",
+            "platform": "linux",
+            "ports": [
+                "5000/tcp"
+            ],
+            "title": "Registry",
+            "type": "Standalone",
+            "volumes": [
+                {
+                    "container": "/var/lib/registry"
+                }
+            ]
+        }
+    ],
+    "version": "1"
+}
