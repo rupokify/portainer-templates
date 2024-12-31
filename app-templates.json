@@ -9,7 +9,7 @@
             "image": "ubuntu:latest",
             "interactive": true,
             "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ubuntu.png",
-            "maintainer": "https://github.com/docker-library",
+            "maintainer": "https://github.com/docker-friends/portainer-templates",
             "note": "Docker Friends Ubuntu Template",
             "platform": "linux",
             "title": "Ubuntu",
@@ -22,7 +22,7 @@
             "description": "Docker image registry",
             "image": "registry:latest",
             "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/docker.png",
-            "maintainer": "https://git.launchpad.net/cloud-images/+oci/ubuntu-base/",
+            "maintainer": "https://github.com/docker-friends/portainer-templates",
             "note": "Docker Friends Ubuntu Template",
             "platform": "linux",
             "ports": [
