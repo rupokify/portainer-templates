@@ -13,7 +13,7 @@
             "note": "Docker Friends Ubuntu Template",
             "platform": "linux",
             "title": "Ubuntu",
-            "type": "Standalone"
+            "type": 1
         },
         {
             "categories": [
@@ -29,7 +29,7 @@
                 "5000/tcp"
             ],
             "title": "Registry",
-            "type": "Standalone",
+            "type": 1,
             "volumes": [
                 {
                     "container": "/var/lib/registry"

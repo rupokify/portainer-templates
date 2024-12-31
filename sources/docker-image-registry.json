@@ -4,7 +4,7 @@
 	"note": "Docker Friends Ubuntu Template",
 	"logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/docker.png",
 	"platform": "linux",
-	"type": "Standalone",
+	"type": 1,
 	"categories": [
 		"docker"
 	],
