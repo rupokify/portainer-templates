@@ -1,41 +1,41 @@
 {
-    "templates": [
+  "templates": [
+    {
+      "categories": [
+        "operating-system"
+      ],
+      "command": "/bin/bash",
+      "description": "Ubuntu (Debian-based) Linux operating system",
+      "image": "ubuntu:latest",
+      "interactive": true,
+      "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ubuntu.png",
+      "maintainer": "https://github.com/docker-friends/portainer-templates",
+      "note": "Docker Friends Ubuntu Template",
+      "platform": "linux",
+      "title": "Ubuntu",
+      "type": 1
+    },
+    {
+      "categories": [
+        "docker"
+      ],
+      "description": "Docker image registry",
+      "image": "registry:latest",
+      "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/docker.png",
+      "maintainer": "https://github.com/docker-friends/portainer-templates",
+      "note": "Docker Friends Ubuntu Template",
+      "platform": "linux",
+      "ports": [
+        "5000/tcp"
+      ],
+      "title": "Registry",
+      "type": 1,
+      "volumes": [
         {
-            "categories": [
-                "operating-system"
-            ],
-            "command": "/bin/bash",
-            "description": "Ubuntu (Debian-based) Linux operating system",
-            "image": "ubuntu:latest",
-            "interactive": true,
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ubuntu.png",
-            "maintainer": "https://github.com/docker-friends/portainer-templates",
-            "note": "Docker Friends Ubuntu Template",
-            "platform": "linux",
-            "title": "Ubuntu",
-            "type": 1
-        },
-        {
-            "categories": [
-                "docker"
-            ],
-            "description": "Docker image registry",
-            "image": "registry:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/docker.png",
-            "maintainer": "https://github.com/docker-friends/portainer-templates",
-            "note": "Docker Friends Ubuntu Template",
-            "platform": "linux",
-            "ports": [
-                "5000/tcp"
-            ],
-            "title": "Registry",
-            "type": 1,
-            "volumes": [
-                {
-                    "container": "/var/lib/registry"
-                }
-            ]
+          "container": "/var/lib/registry"
         }
-    ],
-    "version": "3"
+      ]
+    }
+  ],
+  "version": "3"
 }
