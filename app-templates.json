@@ -5,7 +5,7 @@
                 "operating-system"
             ],
             "command": "/bin/bash",
-            "description": "Debian-based Linux operating system",
+            "description": "Ubuntu (Debian-based) Linux operating system",
             "image": "ubuntu:latest",
             "interactive": true,
             "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ubuntu.png",
