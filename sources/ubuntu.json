@@ -11,5 +11,5 @@
   "image": "ubuntu:latest",
   "interactive": true,
   "command": "/bin/bash",
-  "maintainer": "https://github.com/docker-friends/portainer-templates"
+  "maintainer": "https://launchpad.net/cloud-images"
 }

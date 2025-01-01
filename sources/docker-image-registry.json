@@ -17,5 +17,5 @@
       "container": "/var/lib/registry"
     }
   ],
-  "maintainer": "https://github.com/docker-friends/portainer-templates"
+  "maintainer": "https://github.com/distribution/distribution-library-image"
 }
