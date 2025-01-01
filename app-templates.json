@@ -84,6 +84,37 @@
         },
         {
             "categories": [
+                "Cms"
+            ],
+            "description": "Another free and open-source CMS",
+            "env": [
+                {
+                    "label": "MySQL database host",
+                    "name": "JOOMLA_DB_HOST",
+                    "type": "container"
+                },
+                {
+                    "label": "Database password",
+                    "name": "JOOMLA_DB_PASSWORD"
+                }
+            ],
+            "image": "joomla:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/joomla.png",
+            "maintainer": "https://github.com/joomla-docker/docker-joomla",
+            "platform": "linux",
+            "ports": [
+                "80/tcp"
+            ],
+            "title": "Joomla",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/www/html"
+                }
+            ]
+        },
+        {
+            "categories": [
                 "Database"
             ],
             "description": "The most popular open-source database",
@@ -150,6 +181,27 @@
         },
         {
             "categories": [
+                "Messaging"
+            ],
+            "description": "Highly reliable enterprise messaging system",
+            "image": "rabbitmq:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/rabbitmq.png",
+            "maintainer": "https://github.com/docker-library/rabbitmq",
+            "platform": "linux",
+            "ports": [
+                "5671/tcp",
+                "5672/tcp"
+            ],
+            "title": "RabbitMQ",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/rabbitmq"
+                }
+            ]
+        },
+        {
+            "categories": [
                 "docker"
             ],
             "description": "Docker image registry",
@@ -201,6 +253,26 @@
         },
         {
             "categories": [
+                "Cms"
+            ],
+            "description": "Open-source content management framework",
+            "image": "drupal:latest",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/drupal/live/logo-1720462182785.png",
+            "maintainer": "https://github.com/docker-library/drupal",
+            "platform": "linux",
+            "ports": [
+                "80/tcp"
+            ],
+            "title": "Drupal",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/www/html"
+                }
+            ]
+        },
+        {
+            "categories": [
                 "Webserver"
             ],
             "description": "nginx web server",
@@ -246,6 +318,47 @@
             "volumes": [
                 {
                     "container": "/var/lib/mysql"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Database"
+            ],
+            "description": "Open-source in-memory data structure store",
+            "image": "redis:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/redis.png",
+            "maintainer": "https://redis.io/",
+            "platform": "linux",
+            "ports": [
+                "6379/tcp"
+            ],
+            "title": "Redis",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/data"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Blog"
+            ],
+            "description": "Free and open-source blogging platform",
+            "image": "ghost:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ghost.png",
+            "maintainer": "https://github.com/docker-library/ghost",
+            "note": "Access the blog management interface under <code>/ghost/</code>.",
+            "platform": "linux",
+            "ports": [
+                "2368/tcp"
+            ],
+            "title": "Ghost",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/ghost/content"
                 }
             ]
         },
